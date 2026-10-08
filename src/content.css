@@ -1,0 +1,53 @@
+/* Looks come from Hugging Face's own classes (see HF in content.js); this is layout only. */
+
+article[data-hfx-hidden] {
+  display: none !important;
+}
+
+.hfx-range {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.hfx-range input {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.hfx-apply {
+  flex: none;
+  height: 1.75rem;
+  padding-block: 0;
+}
+
+.hfx-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.625rem 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.hfx-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.hfx-switch {
+  width: fit-content;
+}
+
+.hfx-status {
+  margin-top: 0.625rem;
+}
+
+.hfx-status:empty {
+  display: none;
+}
+
+.hfx-root input.hfx-invalid {
+  border-color: var(--color-red-500, #ef4444);
+}

@@ -1,0 +1,12 @@
+{
+  "name": "hf-model-filters",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser extension adding extra filters to the Hugging Face models page",
+  "scripts": {
+    "test": "node --test",
+    "lint": "npx --yes web-ext lint --ignore-files test package.json README.md",
+    "start": "npx --yes web-ext run --start-url https://huggingface.co/models",
+    "build": "npx --yes web-ext build --overwrite-dest --ignore-files test package.json README.md"
+  }
+}
