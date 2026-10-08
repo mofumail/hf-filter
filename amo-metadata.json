@@ -1,0 +1,13 @@
+{
+  "summary": {
+    "en-US": "Adds extra filters to the Hugging Face models page: an exact parameter-count range, plus minimum downloads and likes, recently updated, name exclusions and hiding gated models."
+  },
+  "categories": {
+    "firefox": [
+      "search-tools"
+    ]
+  },
+  "version": {
+    "license": "MIT"
+  }
+}

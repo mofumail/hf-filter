@@ -49,10 +49,19 @@ unpacked** → pick this folder.
 npm test        # unit tests for the parsing / URL / matching helpers
 npm run lint    # web-ext lint
 npm start       # launches Firefox with the extension loaded
+npm run build   # zip for addons.mozilla.org, in web-ext-artifacts/
+npm run submit  # upload as a listed add-on; needs WEB_EXT_API_KEY and WEB_EXT_API_SECRET
 ```
+
+`amo-metadata.json` carries the listing summary, category and licence used by
+`npm run submit`.
 
 `src/lib.js` holds the pure logic, `src/content.js` the page integration. The
 section is built from Hugging Face's own CSS class lists (the `HF` object at the
 top of `content.js`), so it follows their styling and dark theme. If they
 restyle the page and it starts to look off, those class lists are the place to
 update. It needs no permissions beyond running on the models page.
+
+## Licence
+
+[MIT](LICENSE)

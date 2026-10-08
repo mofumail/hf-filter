@@ -2,7 +2,8 @@
   "manifest_version": 3,
   "name": "HF Model Filters",
   "version": "0.1.0",
-  "description": "Extra filters for the Hugging Face models page: exact parameter range, minimum downloads/likes, recency, gated and name exclusions.",
+  "description": "Adds extra filters to the Hugging Face models page: an exact parameter-count range, plus minimum downloads and likes, recently updated, name exclusions and hiding gated models.",
+  "homepage_url": "https://github.com/mofumail/hf-filter",
   "content_scripts": [
     {
       "matches": ["https://huggingface.co/models*"],
@@ -13,7 +14,7 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "hf-model-filters@local",
+      "id": "hf-filter@mofumail",
       "strict_min_version": "142.0",
       "data_collection_permissions": { "required": ["none"] }
     }

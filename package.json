@@ -5,8 +5,10 @@
   "description": "Browser extension adding extra filters to the Hugging Face models page",
   "scripts": {
     "test": "node --test",
-    "lint": "npx --yes web-ext lint --ignore-files test package.json README.md",
+    "lint": "npx --yes web-ext lint --ignore-files test package.json README.md amo-metadata.json",
     "start": "npx --yes web-ext run --start-url https://huggingface.co/models",
-    "build": "npx --yes web-ext build --overwrite-dest --ignore-files test package.json README.md"
-  }
+    "build": "npx --yes web-ext build --overwrite-dest --ignore-files test package.json README.md amo-metadata.json",
+    "submit": "npx --yes web-ext sign --channel listed --amo-metadata amo-metadata.json --ignore-files test package.json README.md amo-metadata.json"
+  },
+  "license": "MIT"
 }
