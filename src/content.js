@@ -219,7 +219,7 @@
       const data = await response.json();
       for (const model of data.models ?? []) cache.set(model.id, model);
     } catch (error) {
-      console.warn('[HF Model Filters] could not load model metadata:', error);
+      console.warn('[Huggingface Model Filters] could not load model metadata:', error);
       if (fetchedUrl === url) fetchFailed = true;
     }
     if (fetchedUrl === url) fetchDone = true;

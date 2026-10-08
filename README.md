@@ -1,4 +1,4 @@
-# HF Model Filters
+# Huggingface Model Filters
 
 Browser extension that adds two sections to the filter sidebar on
 [huggingface.co/models](https://huggingface.co/models), right below the native

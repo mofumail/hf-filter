@@ -1,9 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "HF Model Filters",
-  "version": "0.1.0",
+  "name": "Huggingface Model Filters",
+  "version": "0.1.1",
   "description": "Adds extra filters to the Hugging Face models page: an exact parameter-count range, plus minimum downloads and likes, recently updated, name exclusions and hiding gated models.",
   "homepage_url": "https://github.com/mofumail/hf-filter",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://huggingface.co/models*"],
